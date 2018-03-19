@@ -17,7 +17,7 @@ SRCS	=	$(wildcard src/*.c)	\
 
 OBJ     =       $(SRCS:.c=.o)
 
-NAME    =       RPG
+NAME    =       rpg
 
 CFLAGS  =	-I./include
 CFLAGS	+=	-g3

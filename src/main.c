@@ -3,7 +3,7 @@
 * @Date:   2018-03-19T09:50:38+01:00
 * @Filename: main.c
  * @Last modified by:   vincent
- * @Last modified time: 2018-03-19T11:56:04+01:00
+ * @Last modified time: 2018-03-19T13:24:20+01:00
 */
 
 #include "rpg.h"
@@ -44,12 +44,7 @@ int main(int argc, char **argv)
     create_window(rpg);
     while (1)
     {
-        if (sfRenderWindow_pollEvent(rpg->par_w->window, &rpg->par_w->event))
-        if (rpg->par_w->event.type == sfEvtClosed)
-        {            sfRenderWindow_close(rpg->par_w->window);
-            return (0);
-        }
         sfRenderWindow_display(rpg->par_w->window);
     }
-return (0);
+    return (0);
 }
